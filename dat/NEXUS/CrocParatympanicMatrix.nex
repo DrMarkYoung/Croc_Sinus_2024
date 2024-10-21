@@ -1,0 +1,61 @@
+#NEXUS
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=35;
+	TAXLABELS
+		Undescribed_sphenosuchian Junggarsuchus_sloani Almadasuchus_figarii Protosuchus_haughtoni Eopneumatosuchus_colberti cf_Hamadasuchus_rebouli Campinasuchus_dinizi Eutretauranosuchus_delfsi Rhabdognathus_aslerensis Shamosuchus_djadochtaensis Lohuecosuchus_megadontos Gavialis_gangeticus Tomistoma_schlegelii Osteolaemus_tetraspis Mecistops_cataphractus Crocodylus_acutus Crocodylus_johnstoni Crocodylus_moreletii Crocodylus_niloticus Crocodylus_porosus Crocodylus_rhombifer Alligator_mississippiensis Alligator_sinensis Caiman_crocodilus Paleosuchus_palpebrosus Plagiophthalmosuchus_gracilirostris Macrospondylus_bollensis Charitomenosuchus_leedsi Pelagosaurus_typus Cricosaurus_schroederi Cricosaurus_araucanensis Thalattosuchus_superciliosus Metriorhynchus_brachyrhynchus Torvoneustes_coryphaeus Plesiosuchus_manselii
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=24;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+ 
+	MATRIX
+
+Undescribed_sphenosuchian	1110?11?0000????0??20000
+Junggarsuchus_sloani	??2101211310??0001?21000
+Almadasuchus_figarii	11210111111???000??21000
+Protosuchus_haughtoni	212121?11311???00??22112
+Eopneumatosuchus_colberti	2121211?????????0??22112
+cf_Hamadasuchus_rebouli	2100211101120?0002120012
+Campinasuchus_dinizi	2100211103120?110?120012
+Eutretauranosuchus_delfsi	21002111012???000?020012
+Rhabdognathus_aslerensis	211011110020??000?020010
+Shamosuchus_djadochtaensis	210021110121??000?02?012
+Lohuecosuchus_megadontos	210021110?2???0003020011
+Gavialis_gangeticus	210021110221000003020012
+Tomistoma_schlegelii	210021110221000003020010
+Osteolaemus_tetraspis	212021110121000003021012
+Mecistops_cataphractus	210021110121000003020010
+Crocodylus_acutus	2100211101210?0003020010
+Crocodylus_johnstoni	2100211101210??00302?010
+Crocodylus_moreletii	2100211101210?0003020010
+Crocodylus_niloticus	210021110121000003020011
+Crocodylus_porosus	210021110121000003020010
+Crocodylus_rhombifer	2100211101210?0003020010
+Alligator_mississippiensis	210021110121110003020012
+Alligator_sinensis	21002111012111000302?012
+Caiman_crocodilus	210021110121110003021012
+Paleosuchus_palpebrosus	210021110121110003021012
+Plagiophthalmosuchus_gracilirostris	??10?2120?00??0011010000
+Macrospondylus_bollensis	21?022120000??0011010000
+Charitomenosuchus_leedsi	211022120000??0011010000
+Pelagosaurus_typus	211022120000??0011010000
+Cricosaurus_schroederi	?210?20?0000??0020010000
+Cricosaurus_araucanensis	221002020000??0020010000
+Thalattosuchus_superciliosus	22?002020000??001?010000
+Metriorhynchus_brachyrhynchus	221002020000??0010010000
+Torvoneustes_coryphaeus	22100202000???0?20010000
+Plesiosuchus_manselii	221002020000??0?20010000
+;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord: 1-24 ;
+
+END;

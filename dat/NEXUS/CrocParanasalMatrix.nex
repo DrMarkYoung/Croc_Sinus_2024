@@ -1,0 +1,53 @@
+#NEXUS
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=26;
+	TAXLABELS
+		Junggarsuchus_sloani Protosuchus_haughtoni cf_Hamadasuchus_rebouli Campinasuchus_dinizi Lohuecosuchus_megadontos Gavialis_gangeticus Tomistoma_schlegelii Osteolaemus_tetraspis Mecistops_cataphractus Crocodylus_acutus Crocodylus_johnstoni Crocodylus_moreletii Crocodylus_niloticus Crocodylus_porosus Crocodylus_rhombifer Alligator_mississippiensis Alligator_sinensis Caiman_crocodilus Paleosuchus_palpebrosus Plagiophthalmosuchus_gracilirostris Macrospondylus_bollensis Pelagosaurus_typus Eoneustes_gaudryi Cricosaurus_schroederi Cricosaurus_araucanensis Thalattosuchus_superciliosus
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=15;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+ 
+	MATRIX
+
+Junggarsuchus_sloani	??????????01022
+Protosuchus_haughtoni	0000000?0001011
+cf_Hamadasuchus_rebouli	200100000001000
+Campinasuchus_dinizi	200100110020000
+Lohuecosuchus_megadontos	200100000000000
+Gavialis_gangeticus	200100000100000
+Tomistoma_schlegelii	200100001000000
+Osteolaemus_tetraspis	200100001000000
+Mecistops_cataphractus	200100001000000
+Crocodylus_acutus	200110002000000
+Crocodylus_johnstoni	200?1000?000000
+Crocodylus_moreletii	200110002000000
+Crocodylus_niloticus	200?1?00?000000
+Crocodylus_porosus	200?1000?000000
+Crocodylus_rhombifer	200110002000000
+Alligator_mississippiensis	200101001010000
+Alligator_sinensis	200?0000?010000
+Caiman_crocodilus	200?000???00000
+Paleosuchus_palpebrosus	20010000?000000
+Plagiophthalmosuchus_gracilirostris	100000000001011
+Macrospondylus_bollensis	100000000001000
+Pelagosaurus_typus	100000000001000
+Eoneustes_gaudryi	100000000??0100
+Cricosaurus_schroederi	111000010??0100
+Cricosaurus_araucanensis	111000010000100
+Thalattosuchus_superciliosus	11100001??00100
+
+;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unordered: 1-15; 
+
+END;
